@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening begrip HTML</title>
+<style>
+#inhoud{
+    line-height: 4pt;
+}
+</style>
+</head>
+<body>
+   
+    <div id="inhoud">
+<h1>HTML betekenissen</h1>
+<hr></hr>
+
+<h2>Inhoud:</h2>
+<p><a href="#C1">Elementen</a></p>
+<p><a href="#C2">HTML</a></p>
+<p><a href="#C3">Links</a></p>
+<p><a href="#C4">Lege elementen</a></p>
+<p><a href="#C5">Attributen</a></p>
+<p><a href="#C6">Styles</a></p>
+<p><a href="#C7">< Picture ></a></p>
+<p><a href="#C8">Data Table</a></p>
+<p><a href="#C9">Blok en Inline</a></p>
+<p><a href="#C10">Classes elementen</a></p>
+<p><a href="#C11">Layout</a></p>
+<p><a href="#C12">Grote elementen en de website</a></p>
+<p><a href="#C13">Entiteiten en Symbolen</a></p>
+<p><a href="#C14">HTML Methods</a></p>
+<p><a href="#C15">HTML Form elementen</a></p>
+<p><a href="#C16">HTML Canvas en SVG</a></p>
+<p><a href="#C17">Object en Embed element</a></p>
+<p><a href="#C18">Web Storage en Web workers API</a></p>
+<p><a href="#C19">SSE</a></p>
+
+</div>
+<hr></hr>
+
+<h2 id="C1">Elementen (denk aan Headers, paragrafen, enz.)</h2>
+
+<h3> Dit is een "Header element" met behulp van een <U>< h3 > tag</U></h3>
+<p> Dit is een "Paragraaf element" met behulp van de <U>< p > tag</u></p>
+
+<hr></hr>
+
+<h2 id="C2">HTML</h2>
+<p> <u>< html ></u> is de bron van de pagina. </p>
+<p> <u>< !doctype html ></u> zorgt er voor om aan te geven welke HTML versie er word gebruikt. </p>
+<p> de "lang" attribuut bepaald het taal van het HTML. Dit verklaart of stelt het taal van HTML vast zodat <br>
+     dit makkelijker is voor de search engines om jouw website te kunnen vinden</p>
+<p>De <u>< meta ></u> element is er om het character set, descriptie voor de pagina, sleutelworden, auteur van de document en vieuwport instelling in te stellen.<br>
+Dit is handig voor search engines of hoe de pagina content vertoont moet worden en ook instelling voor het refreshen van de pagina (Zoals om hoeveel seconden er refreshed moet worden.)<br>
+De <u>< Viewport ></u>element bepaalt hoe je pagina vertoont word afhankelijk van de apparaat. De "width=device-width" zorgt daarvoor. De "initial-scale=1.0" zorgt ervoor hoeveel er ingezoomed is op jouw pagina.
+<u>< base ></u>zorgt voor dat er een standaard URL op je pagina.</p>
+
+<hr></hr>
+<h2 id="C3">Links</h2>
+<p> de <u> < a > </u> tag wordt gebruikt voor links. </p>
+
+<p>Binnen het linken kun je met een attribuut er voor zorgen hoe de andere website wordt geopend:
+    <ul>
+        <li>self, opent de de website in hetzelfde tab.</li>
+        <li>blank, opent de document in een nieuwe window of tab.</li>
+        <li>parent, opent de document in de parent frame</li>
+        <li>_top, opent de document in de volle body van de window.</li>
+        <li>Iframe, opent de link binnen de iFrame element.</li>
+    </ul>
+</p>
+<p>Je hebt absolute URLs en Relative URLS. <br>
+Absolute URLS zijn links naar website's. Relative URLS zijn links binnen jouw lokale bestanden. denk aan waar je plaatjes in je PC staat enz. </p>
+
+<p></p>
+
+<hr></hr>
+
+<h2 id="C4">Lege elementen</h2>
+<p>Een element zonder text of content heet ook een leeg element. Denk aan een <u> < br > </u> <br> Dit element breekt de text af voor deze text. </br> </p>
+
+<hr></hr>
+
+<h2 id="C5">Attributen</h2>
+<p>Attributen is aanvullende informatie voor elementen binnen HTMl. Denk aan href= voor < a > "href =" is een attribuut voor een element. <br>
+<b>Voorbeeld: </b> <'a href="www.w3schools.com><'/a>' <b>Negeer de apostrofes.</b></br></p>
+
+<p> De attributen kunnen ook bijvoorbeeld "width" of "height" zijn voor plaatjes. 
+<p style="color: darkorange;">  Of "style" voor het stijlen van verschillende elementen binnen HTML </p></p>
+
+<hr></hr>
+<h2 id="C6">Style / CSS</h2>
+
+<p>Met de "style" attribuut kun je CSS of vormgeving toepassen op je HTML. <br>
+Er zijn verschillende manieren om "style" toe te passen:
+<ul>
+<li> Inline</li>
+<li> Internal</li> 
+<li> External</li>
+</ul>
+</p>
+
+<h3>Inline</h3>
+<p><u>Inline</u> word gebruikt om 1 element aan te passen met vormgeving.</p>
+
+<h3>Internal</h3>
+<p><u>Internal style</u> is vastgesteld in de "Head" element. Dit word gebruikt om een bepaalde selectie te vormgeven. Hiermee kan je bijvoorbeeld alle <br>
+</br>< h1 > elementen binnen de HTML broncode een andere font hebben, of een andere kleur of stijl.</p>
+
+<h3>External</h3>
+<p> Dit is een externe CSS bestand die gekoppeld aan je HTML broncode binnen je head element.</p>
+
+<hr></hr>
+
+<h2 id="C7">< Picture > element</h2>
+<p>De < picture > element heeft meerdere < source > elementen die via het attribuut "srcset" naar meerdere afbeeldingen verwijzen. <br>
+Op deze manier kan de browser de afbeelding kiezen die past bij het huidige weergaven en / of past op de apparaat.</p>
+
+<hr></hr>
+
+<h2 id="C8">Data Table</h2>
+<p>De < td > of Data Table is een tabel waar alle HTML elementen in kunnen, denk aan plaatjes, lijsten, text, andere tabellen enz.</p>
+
+<hr></hr>
+
+<h2 id="C9">Blok en Inline</h2>
+<div> <u> blok </u>  element start altijd op een nieuwe regel van links naar rechts. Deze zorgt ervoor dat de text zover mogelijk naar recht uitgetyped kan worden. <br>
+<b>De <u>< div ></u> element is een voorbeeld van een blok element.</b></div>
+<p>De <u>Inline </u> blok start niet op een nieuwe lijn en neement alleen zoveel ruimte aan wat er nodig is .<br>
+De <u>< span ></u> element wordt vaak hiervoor gebruikt.</p>
+
+<hr></hr>
+
+<h2 id="C10"> Classes </h2>
+<p>De  "class" element  wordt gebruikt voor de "style" element om de aangewezen elementen te vormgeven.
+de HTML elementen kunnen bij meer classes horen dan alleen in 1 class, ze kijken ook naar de aangegeven elementen. 
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_multiple" target="blank">VOORBEELD</a>
+
+<hr></hr>
+
+<h2 id="C11">Layout pagina</h2>
+<p>Er zijn 4 verschillende manieren om een multikolom layout te maken:</p>
+<ul>
+    <li>CSS Framework, Dit zijn kan en klare templates for frameworks. denk aan w3.CSS of Bootstrap.</li>
+    <li>CSS float property, dit kan je met behulp van de < float > element uit voeren.</li>
+    <li>CSS Flexbox, dit is handig voor verschillende devices.</li>
+    <li>CSS Grid, dit is hetzelfde principe als de Float property, maar dan met de < grid > element</li>
+    <a href="https://www.w3schools.com/html/html_layout.asp" target="blank">VOORBEELD</a>
+</ul>
+
+<hr></hr>
+
+<h2 id="C12">Grote elementen en de website</h2>
+<p>Soms kan een foto te groot zijn voor de webpagina of voor de foto zelf dat het pixelated raakt. Dan kun je in meeste gevallen het beste "max-width 100%"" eigenschap gebruiken. <br>
+Je kunt ook met behulp van < source srcset > en de attribuut "media="(width & height)"" dat de foto's zich aanpassen aan hun grote zodra de scherm kleiner of groter wordt.<br>
+Dit geldt ook voor text. Dit kunt je met de parameter "vw" (viewpoint) aanpassen met behulp van de aantal percentage aan te geven bij de parameter. <br>
+Dit kun je ook doen voor telefoon met behul van "@media." </p>
+
+<hr></hr>
+
+<h2 id="C13">Entiteit en Symbolen</h2>
+<p>Binnen de HTML om speciale iconen of symbolen te vertonen word er gebruik gemaakt van entiteiten. Hiervoor heb je een speciale lijst:</p>
+<ul>
+<li> <a href="https://www.w3schools.com/html/html_entities.asp" target="blank">Entiteiten</a> </li>
+<li> <a href="https://www.w3schools.com/html/html_symbols.asp" target="blank">Symbolen</a> </li>
+<li> <a href="https://www.w3schools.com/html/html_emojis.asp" target="blank">Emoji</a> </li>
+</ul>
+</p>
+<hr></hr>
+
+<h2 id="C14">HTML Methods</h2>
+<p>De  "Method" attribuut zorgt dat je de "Post" en "Get" elementen kunt gebruiken voor het verzenden van gegevens met behulp van de attribuut "action".<br>
+de GET element is de normaalste manier van verzenden van data in je form. Dit is handig voor data die niet prive hoeft te zijn of te veel data, dit komt terrecht in je adresbalk.<br>
+de POST element voegt de form data in het lichaam van de HTTP request (Dus niet in de adresbalk). Dit kan worden gebruikt voor grote data. Deze kunnen niet gebookmarked worden.<br>
+de Formenctype attribuut zorgt er voor hoe de formuliergegevens moeten worden ingevoerd. (DIT WORDT GEBRUIKT VOOR FORMS MET DE METHODE ATTRIBUUT =POST</p>
+
+<hr></hr>
+
+<h2 id="C15">HTML Form elementen</h2>
+Hier zijn een aantal elementen als voorbeeld wat wat doet:
+
+<h3>The select Element</h3>
+
+<p>De "select" element verklaart een dropdown lijst en de "option" element zijn er om keuze's gemaakt. De label is er om klikbaarheid makkelijker te maken.</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h3>Size attribuut</h3>
+
+<p>De size attribuut zorgt er voor hoeveel elementen er in de dropdown lijst zichtbaar zijn, in dit geval is de parameter van de attribuut "size" op 3, dus je ziet 3 elementen van de 4.</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+
+<h3>Multiple attribuut</h3>
+
+<p>De multiple attribuut zorgt er voor dat je meerdere keuzes kunt maken. (druk op Control of command en klik op de elementen)</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+
+<h3>Form elementen in een groep met Fieldset element</h3>
+
+<p>De fielset zorgt er voor dat de input's bij elkaar in een vormgeving komen. <br>
+Met behulp van de Legend element kun je een titel geven aan de Fieldset element.</p>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<h3>Datalist Element</h3>
+
+<p>De datalist element pakt de data of waarde die jij zelf hebt ingevuld bij een andere input.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<hr></hr> 
+
+<h2>De pattern attribuut van de element: input</h2>
+<p>Met de pattern attribuut kun je ervoor zorgen dat bepaalde waardes in een input ingevoerd wordt en de overbodige uit te sluiten. <br>
+Dit werkt ook met verschillende input types zoals voor wachtwoord, E-mail, datum, text enz.<br></p>
+
+<p>"pattern="[A-Za-z]{3}" Dit is een voorbeeld voor een drie letterige landcode.
+Ook in Javascript word dit uitgevoerd met RegExp attribuut.</p>
+
+
+
+<form action="/action_page.php">
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code"
+    pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+    <input type="submit">
+  </form>
+
+  <hr></hr> 
+
+  <h2 id="C16">HTML Canvas en SVG</h2>
+  <p>De canvas element word gebruikt om direct afbeeldingen op een webpagina te tekenen via Javascript.<br>
+Het canvas element is een container voor afbeeldingen. Deze heeft wel verschillende methoden om paden, kaders, cirkels text te tekenen en afbeeldingen toe te voegen.<br>
+<i>Zie het canvas element als een schilder-lijst.</i></p>
+<br>
+<p>Oorspronkelijk is SVG een vector based image. Maar je kunt ook behulp met de SVG element in HTML tekenen.<br>
+<b>Voorbeeld:</b></p>
+
+<'svg width="100" height="100"'>
+    <'circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /'>
+ <'/svg'>
+<br>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+ </svg>
+
+<hr></hr>
+
+<h2 id="C17">Object en Embed element</h2>
+<p>Object element word vaak gebruikt om plug-ins in werking te zetten, denk aan andere HTML bestanden, of PDF readers, Flash player enz.<br>
+<b>Het verschil tussen embed en Object element is:</b><br>
+<br>
+<b>Object:</b>Dit is een methode om een bestand toe te voegen aan je website die je bij de bron (het lokale bestand zelf) kan aanpassen.<br>
+<b>Embed:</b> Dit is een methode om bestanden toe te voegen zonder dat er aanpassingen in kunnen komen.</p>
+
+<hr></hr>
+
+<h2 id="C18">Web storage & Web Workers API</h2>
+<p>Web storage is één van de meerdere API's waar de data van jouw website opgeslagen kan worden in diegene zijn lokale bestanden. Dit is handig voor bijvoorbeeld het onthouden van inlog-gegevens.<br>
+Dit is tenslotte ook handig voor de performance van de website, de info wordt nooit gestuurd naar de server. De hoeveelheid dat opgeslagen kan worden is groter dan 5 MB.</p>
+
+<p>Er zijn 2 manieren om data op te slaan:<br>
+Via Local storage: "window.localStorage" dit slaat data op de bezoekers computer, zonder dat het over een bepaald tijd weg is.<br>
+Via Session Storage: "window.sessionStorage" Dit slaat data op voor één sessie, zodra de pagina gesloten is zijn deze gegevens kwijt.</p>
+
+<p>Een webworker API is een Javascript dat in de achtergrond aan het draaien is zonder dat dit invloed heeft op de performance van de pagina.</p>
+
+<hr></hr>
+
+<h2 id="C19">SSE</h2>
+<p>De server Sent Events API zorgt er voor dat de pagina (evt. constant) updates krijgt van een server. Dit is meer back-end gerelateerd.</p>
+</body>
+</html>
+
+    
